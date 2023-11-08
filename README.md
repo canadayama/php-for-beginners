@@ -18,7 +18,7 @@
 4. Variables
 5. Conditionals and Booleans
 6. Arrays
-7. 
+7. Associative Arrays
 8. 
 9. 
 10. 
