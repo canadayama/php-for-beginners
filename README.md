@@ -16,8 +16,8 @@
 2. Tools of the Trade
 3. Your First PHP Tag
 4. Variables
-5. 
-6. 
+5. Conditionals and Booleans
+6. Arrays
 7. 
 8. 
 9. 
