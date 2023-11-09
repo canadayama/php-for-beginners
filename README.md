@@ -19,6 +19,6 @@
 5. Conditionals and Booleans
 6. Arrays
 7. Associative Arrays
-8. 
+8. Functions and Filtering
 9. 
 10. 
