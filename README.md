@@ -39,7 +39,7 @@
 21. Mini-Project: Notes App
 22. Render the Notes and Note Page
 23. Introduction to Authorization
-24.
+24. Programming is Rewriting
 25.
 26.
 27.
