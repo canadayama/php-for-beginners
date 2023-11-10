@@ -28,7 +28,7 @@
 10. Separate PHP Logic From the Template
 11. Technical Check-In (With Quiz)
 12. Page Links
-13.
+13. Partials
 14.
 15.
 16.
