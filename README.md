@@ -35,4 +35,15 @@
 17. PDO First Steps
 18. Extract a PHP Database Class
 19. Environments and Configuration Flexibility
-20.
+20. SQL Injection Vulnerabilities Explained
+21.
+22.
+23.
+24.
+25.
+26.
+27.
+28.
+29.
+30.
+
