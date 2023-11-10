@@ -21,4 +21,4 @@
 7. Associative Arrays
 8. Functions and Filtering
 9. Lambda Functions
-10. 
+10. Separate PHP Logic From the Template
