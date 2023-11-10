@@ -6,15 +6,11 @@
     <title>Demo</title>
 </head>
     <body>
-        <h1>Recommended Books</h1>
+        <h1><?= $business['name'] ?></h1>
         <ul>
-            <?php foreach ($filteredBooks as $book): ?>
-                <li>
-                    <a href="<?= $book['purchaseUrl'] ?>">
-                        <?= $book['name'] ?> (<?= $book['releaseYear'] ?>) - By <?= $book['author'] ?>
-                    </a>
-                </li>
-            <? endforeach; ?>
+            <?php foreach ($business['categories'] as $category) : ?>
+            <li><?= $category ?></li>
+            <?php endforeach; ?>
         </ul>
     </body>
 </html>
