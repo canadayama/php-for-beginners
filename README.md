@@ -27,7 +27,7 @@
 9. Lambda Functions
 10. Separate PHP Logic From the Template
 11. Technical Check-In (With Quiz)
-12.
+12. Page Links
 13.
 14.
 15.
