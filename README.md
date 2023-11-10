@@ -33,6 +33,6 @@
 15. Make a PHP Router
 16. Create a MySQL Database
 17. PDO First Steps
-18.
+18. Extract a PHP Database Class
 19.
 20.
