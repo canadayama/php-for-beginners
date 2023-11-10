@@ -36,7 +36,7 @@
 18. Extract a PHP Database Class
 19. Environments and Configuration Flexibility
 20. SQL Injection Vulnerabilities Explained
-21.
+21. Mini-Project: Notes App
 22.
 23.
 24.
