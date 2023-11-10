@@ -37,7 +37,7 @@
 19. Environments and Configuration Flexibility
 20. SQL Injection Vulnerabilities Explained
 21. Mini-Project: Notes App
-22.
+22. Render the Notes and Note Page
 23.
 24.
 25.
