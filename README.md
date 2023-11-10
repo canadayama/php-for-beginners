@@ -34,5 +34,5 @@
 16. Create a MySQL Database
 17. PDO First Steps
 18. Extract a PHP Database Class
-19.
+19. Environments and Configuration Flexibility
 20.

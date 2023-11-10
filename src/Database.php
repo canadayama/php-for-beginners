@@ -1,16 +1,21 @@
 <?php
 
+/**
+ * Undocumented class
+ */
 class Database {
     public $connection;
 
     /**
      *
      */
-    public function __construct()
+    public function __construct($config, $username = 'root', $password = '')
     {
-        $dsn = "mysql:host=172.16.79.39;port=3306;dbname=php_tut;user=phptut;password=secret;charset=utf8mb4";
+        $dsn = 'mysql:' . http_build_query($config, '', ';');
 
-        $this->connection = new PDO($dsn);
+        $this->connection = new PDO($dsn, $username, $password, [
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+        ]);
     }
 
     /**
