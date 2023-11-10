@@ -29,7 +29,7 @@
 11. Technical Check-In (With Quiz)
 12. Page Links
 13. Partials
-14.
+14. Superglobals and Current Page Styling
 15.
 16.
 17.
