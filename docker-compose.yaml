@@ -9,6 +9,10 @@ services:
       - ${NGINX_PORT_OUT}:80
     volumes:
       - ./scripts/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      php-tut:
+        ipv4_address: 172.16.79.2
+
 
   mysql:
     image: mysql:8.0
@@ -18,6 +22,9 @@ services:
       - data:/var/lib/mysql
     ports:
       - ${DB_PORT_OUT}:3306
+    networks:
+      php-tut:
+        ipv4_address: 172.16.79.39
     environment:
       MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
       MYSQL_USER: ${DB_USERNAME}
@@ -36,6 +43,9 @@ services:
       - ./src:/var/www/html
     ports:
       - 9000:9000
+    networks:
+      php-tut:
+        ipv4_address: 172.16.79.69
     depends_on:
       - nginx
       - mysql
@@ -43,3 +53,12 @@ services:
 
 volumes:
   data:
+
+networks:
+  php-tut:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.79.0/16
+          gateway: 172.16.79.1
+  

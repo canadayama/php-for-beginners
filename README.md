@@ -31,8 +31,8 @@
 13. Partials
 14. Superglobals and Current Page Styling
 15. Make a PHP Router
-16.
-17.
+16. Create a MySQL Database
+17. PDO First Steps
 18.
 19.
 20.
