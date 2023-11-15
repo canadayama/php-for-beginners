@@ -43,7 +43,7 @@
 25. Intro to Forms and Request Methods
 26. Always Escape Untrusted Input
 27. Introduction to Form Validation
-28.
+28. Extract a Simple Validation Class
 29.
 30.
 31.
