@@ -40,8 +40,8 @@
 22. Render the Notes and Note Page
 23. Introduction to Authorization
 24. Programming is Rewriting
-25.
-26.
+25. Intro to Forms and Request Methods
+26. Always Escape Untrusted Input
 27.
 28.
 29.
