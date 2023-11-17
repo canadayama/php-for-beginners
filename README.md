@@ -44,7 +44,7 @@
 26. Always Escape Untrusted Input
 27. Introduction to Form Validation
 28. Extract a Simple Validation Class
-29.
+29. Resourceful Naming Conventions
 30.
 31.
 32.
