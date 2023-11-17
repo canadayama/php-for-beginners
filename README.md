@@ -46,7 +46,7 @@
 28. Extract a Simple Validation Class
 29. Resourceful Naming Conventions
 30. Autoloading and Extraction
-31.
+31. Namespacing: What, Why, How
 32.
 33.
 34.

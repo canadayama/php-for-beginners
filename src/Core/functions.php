@@ -1,5 +1,8 @@
 <?php 
 
+use Core\Response;
+
+
 /**
  * Undocumented function
  *
