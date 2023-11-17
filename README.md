@@ -49,7 +49,7 @@
 31. Namespacing: What, Why, How
 32. Handle Multiple Request Methods From a Controller Action?
 33. Build a Better PHP Router
-34.
+34. One Request, One Controller
 35.
 36.
 37.
