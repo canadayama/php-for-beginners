@@ -22,6 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         // Redirect
         header("Location: /notes");
+        exit();
     }
 }
 

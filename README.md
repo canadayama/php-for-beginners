@@ -47,7 +47,7 @@
 29. Resourceful Naming Conventions
 30. Autoloading and Extraction
 31. Namespacing: What, Why, How
-32.
+32. Handle Multiple Request Methods From a Controller Action?
 33.
 34.
 35.
