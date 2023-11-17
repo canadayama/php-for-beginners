@@ -30,6 +30,20 @@ function urlIs($value) {
 /**
  * Undocumented function
  *
+ * @param integer $code
+ * @return void
+ */
+function abort(int $code = 404)
+{
+    http_response_code($code);
+
+    view("{$code}.php");
+    die();
+}
+
+/**
+ * Undocumented function
+ *
  * @param [type] $condition
  * @param [type] $status
  * @return void

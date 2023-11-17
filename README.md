@@ -48,7 +48,7 @@
 30. Autoloading and Extraction
 31. Namespacing: What, Why, How
 32. Handle Multiple Request Methods From a Controller Action?
-33.
+33. Build a Better PHP Router
 34.
 35.
 36.
