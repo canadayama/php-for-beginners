@@ -51,7 +51,7 @@
 33. Build a Better PHP Router
 34. One Request, One Controller
 35. Make Your First Service Container
-36.
+36. Updating a Resource With PATCH Requests
 37.
 38.
 39.
