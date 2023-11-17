@@ -36,3 +36,28 @@ function authorize($condition, $status = Response::FORBIDDEN) {
         abort($status);
     }
 }
+
+/**
+ * Undocumented function
+ *
+ * @param string $path
+ * @return string
+ */
+function base_path(string $path): string
+{
+    return BASE_PATH . $path;
+}
+
+/**
+ * Undocumented function
+ *
+ * @param string $path
+ * @param Array $attributes
+ * @return void
+ */
+function view(string $path, $attributes = []): void
+{
+    extract($attributes);
+    
+    require base_path('views/' . $path);
+}
