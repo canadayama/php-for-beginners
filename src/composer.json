@@ -1,0 +1,16 @@
+{
+    "name": "rhayashi/src",
+    "authors": [
+        {
+            "name": "Richard Y. Hayashi",
+            "email": "rhayashi@gruuw.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Http/"
+        }
+    }
+}

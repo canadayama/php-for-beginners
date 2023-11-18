@@ -62,7 +62,7 @@
 44. The PRG Pattern (and Session Flashing)
 45. Flash Old Form Data to the Session
 46. Automatically Redirect Back Upon Failed Validation
-47.
+47. Composer and Free Autoloading
 48.
 49.
 50.
