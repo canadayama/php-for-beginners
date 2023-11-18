@@ -24,7 +24,7 @@
           <input id="email" name="email" type="email" value="<?= $_POST['email'] ?? '' ?>" autocomplete="email" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
         </div>
       </div>
-      <?php if (isset($errors['email'])) : ?>
+      <?php if (isset($errors) && isset($errors['email'])) : ?>
         <p class="text-red-500 text-xs mt-2"><?= $errors['email'] ?>
       <?php endif; ?>
 
@@ -36,7 +36,7 @@
           <input id="password" name="password" type="password" value="<?= $_POST['password'] ?? '' ?>" autocomplete="current-password" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
         </div>
       </div>
-      <?php if (isset($errors['password'])) : ?>
+      <?php if (isset($errors) && isset($errors['password'])) : ?>
         <p class="text-red-500 text-xs mt-2"><?= $errors['password'] ?>
       <?php endif; ?>
       <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Log in</button>

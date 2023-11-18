@@ -37,31 +37,27 @@ class Authenticator
     }
 
     /**
- * Undocumented function
- *
- * @param Array $user
- * @return void
- */
-public function login(Array $user): void
-{
-    $_SESSION['user'] = [
-        'email' => $user['email']
-    ];
+     * Undocumented function
+     *
+     * @param Array $user
+     * @return void
+     */
+    public function login(Array $user): void
+    {
+        $_SESSION['user'] = [
+            'email' => $user['email']
+        ];
 
-    session_regenerate_id(true);
-}
+        session_regenerate_id(true);
+    }
 
-/**
- * Undocumented function
- *
- * @return void
- */
-public function logout(): void
-{
-    $_SESSION = [];
-    session_destroy();
-
-    $params = session_get_cookie_params();
-    setcookie('PHPSESSID', '', time() - 3600, $params['path'], $params['domain'], $params['secure'], $params['httponly']);
-}
+    /**
+     * Undocumented function
+     *
+     * @return void
+     */
+    public function logout(): void
+    {
+        Session::destroy();
+    }
 }
