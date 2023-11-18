@@ -52,7 +52,7 @@
 34. One Request, One Controller
 35. Make Your First Service Container
 36. Updating a Resource With PATCH Requests
-37.
+37. Sessions 101
 38.
 39.
 40.
