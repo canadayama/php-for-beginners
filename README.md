@@ -63,6 +63,6 @@
 45. Flash Old Form Data to the Session
 46. Automatically Redirect Back Upon Failed Validation
 47. Composer and Free Autoloading
-48.
+48. Install Two Composer Packages: Collections and PestPHP
 49.
 50.

@@ -6,11 +6,21 @@
             "email": "rhayashi@gruuw.com"
         }
     ],
-    "require": {},
     "autoload": {
         "psr-4": {
             "Core\\": "Core/",
             "Http\\": "Http/"
+        }
+    },
+    "require": {
+        "illuminate/collections": "^10.32"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.24"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
         }
     }
 }
