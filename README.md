@@ -53,7 +53,7 @@
 35. Make Your First Service Container
 36. Updating a Resource With PATCH Requests
 37. Sessions 101
-38.
+38. Register a New User
 39.
 40.
 41.
