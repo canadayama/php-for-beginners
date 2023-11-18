@@ -128,6 +128,16 @@ class Router {
     /**
      * Undocumented function
      *
+     * @return string
+     */
+    public function previousUrl(): string
+    {
+        return $_SERVER['HTTP_REFERER'];
+    }
+
+    /**
+     * Undocumented function
+     *
      * @param int $code
      * @return void
      */
