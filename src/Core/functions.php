@@ -1,5 +1,6 @@
 <?php 
 
+use Core\Session;
 use Core\Response;
 
 
@@ -89,4 +90,16 @@ function redirect(string $path): void
 {
     header("location: {$path}");
     exit();
+}
+
+/**
+ * Undocumented function
+ *
+ * @param string $key
+ * @param string $default
+ * @return string
+ */
+function old(string $key, string $default = ''): string
+{
+    return Session::get('old')[$key] ?? $default;
 }

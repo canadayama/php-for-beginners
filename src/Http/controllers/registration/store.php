@@ -1,11 +1,13 @@
 <?php
 
 use Core\App;
+use Core\Authenticator;
 use Core\Database;
 use Core\Validator;
 
 $email = $_POST['email'];
 $password = $_POST['password'];
+$password_confirm = $_POST['password_confirm'];
 
 $errors = [];
 if (!Validator::email($email)) {
@@ -14,6 +16,10 @@ if (!Validator::email($email)) {
 
 if (!Validator::string($password, 7, 255)) {
     $errors['password'] = 'Please enter a password between 7 and 255 characters.';
+}
+
+if ($password !== $password_confirm) {
+    $errors['password_confirm'] = 'Passwords do not match!.';
 }
 
 if (!empty($errors)) {
@@ -41,7 +47,7 @@ if ($result) {
         'password' => password_hash($password, PASSWORD_BCRYPT)
     ]);
 
-    login([
+    (new Authenticator)->login([
         'email' => $email
     ]);
 
