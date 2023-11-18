@@ -56,7 +56,7 @@
 38. Register a New User
 39. Write Your First Middleware
 40. Manage Passwords Like This For The Remainder of Your Career
-41.
+41. Log In and Log Out
 42.
 43.
 44.
