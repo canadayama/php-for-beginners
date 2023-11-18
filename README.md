@@ -55,7 +55,7 @@
 37. Sessions 101
 38. Register a New User
 39. Write Your First Middleware
-40.
+40. Manage Passwords Like This For The Remainder of Your Career
 41.
 42.
 43.

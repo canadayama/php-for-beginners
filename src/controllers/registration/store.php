@@ -29,12 +29,16 @@ $result = $db->query('SELECT * FROM users WHERE email = :email', [
 ])->find();
 
 if ($result) {
-    header('location: /');
-    exit();
+    $errors['email'] = 'Email already registered!';
+    return view('registration/create.view.php', [
+        'errors' => $errors
+    ]);
+    //header('location: /');
+    //exit();
 } else {
     $db->query('INSERT INTO users(email, password) VALUES(:email, :password)', [
         'email' => $email,
-        'password' => $password
+        'password' => password_hash($password, PASSWORD_BCRYPT)
     ]);
 
     $_SESSION['user'] =[
