@@ -54,7 +54,7 @@
 36. Updating a Resource With PATCH Requests
 37. Sessions 101
 38. Register a New User
-39.
+39. Write Your First Middleware
 40.
 41.
 42.

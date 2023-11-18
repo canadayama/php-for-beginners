@@ -2,6 +2,10 @@
 
 namespace Core;
 
+use Core\Middleware\Guest;
+use Core\Middleware\Auth;
+use Core\Middleware\Middleware;
+
 /**
  * Undocumented class
  */
@@ -21,8 +25,11 @@ class Router {
         $this->routes[] = [
             'uri' => $uri,
             'controller' => $controller,
-            'method' => $method
+            'method' => $method,
+            'middleware' => null,
         ];
+
+        return $this;
     }
 
     /**
@@ -34,7 +41,7 @@ class Router {
      */
     public function get($uri, $controller)
     {
-        $this->add('GET', $uri, $controller);
+        return $this->add('GET', $uri, $controller);
     }
 
     /**
@@ -46,7 +53,7 @@ class Router {
      */
     public function post($uri, $controller)
     {
-        $this->add('POST', $uri, $controller);
+        return $this->add('POST', $uri, $controller);
     }
 
     /**
@@ -58,7 +65,7 @@ class Router {
      */
     public function delete($uri, $controller)
     {
-        $this->add('DELETE', $uri, $controller);
+        return $this->add('DELETE', $uri, $controller);
     }
 
     /**
@@ -70,7 +77,7 @@ class Router {
      */
     public function patch($uri, $controller)
     {
-        $this->add('PATCH', $uri, $controller);
+        return $this->add('PATCH', $uri, $controller);
     }
 
     /**
@@ -82,7 +89,20 @@ class Router {
      */
     public function put($uri, $controller)
     {
-        $this->add('PUT', $uri, $controller);
+        return $this->add('PUT', $uri, $controller);
+    }
+
+    /**
+     * Undocumented function
+     *
+     * @param [type] $key
+     * @return void
+     */
+    public function only($key)
+    {
+        $this->routes[array_key_last($this->routes)]['middleware'] = $key;
+        
+        return $this;
     }
 
     /**
@@ -96,6 +116,8 @@ class Router {
     {
         foreach ($this->routes as $route) {
             if ($route['uri'] === $uri && $route['method'] === strtoupper($method)) {
+                Middleware::resolve($route['middleware']);
+                
                 return require base_path($route['controller']);
             }
         }
