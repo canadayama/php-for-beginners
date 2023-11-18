@@ -82,28 +82,11 @@ function view(string $path, $attributes = []): void
 /**
  * Undocumented function
  *
- * @param Array $user
+ * @param string $path
  * @return void
  */
-function login(Array $user): void
+function redirect(string $path): void
 {
-    $_SESSION['user'] = [
-        'email' => $user['email']
-    ];
-
-    session_regenerate_id(true);
-}
-
-/**
- * Undocumented function
- *
- * @return void
- */
-function logout(): void
-{
-    $_SESSION = [];
-    session_destroy();
-
-    $params = session_get_cookie_params();
-    setcookie('PHPSESSID', '', time() - 3600, $params['path'], $params['domain'], $params['secure'], $params['httponly']);
+    header("location: {$path}");
+    exit();
 }

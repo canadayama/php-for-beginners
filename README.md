@@ -58,7 +58,7 @@
 40. Manage Passwords Like This For The Remainder of Your Career
 41. Log In and Log Out
 42. Extract a Form Validation Object
-43.
+43. Extract an Authenticator Class
 44.
 45.
 46.
