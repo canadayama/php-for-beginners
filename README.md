@@ -14,6 +14,20 @@
 
 `php -S localhost:8888`
 
+## Testing
+
+### Install PEST
+
+`$ composer require pestphp/pest --dev --with-all-dependencies`
+
+### Initialize PEST
+
+`$ ./vendor/bin/pest --init`
+
+### Run PEST
+
+`$ ./vendor/bin/pest`
+
 ## PHP For Beginners
 
 1. How to Choose A First Programming Language
